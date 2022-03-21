@@ -6,6 +6,7 @@
   //Input variables
   export let ariaLabel: string | null = null;
   export let url: string;
+  export let color: string;
 
   //Smooth scroll behavior
   let action: any = () => {
@@ -16,13 +17,13 @@
   };
 </script>
 
-<a on:click={action} href={url} class="center" class:active={$page.url.pathname === url} aria-label={!ariaLabel ? undefined : ariaLabel}>
+<a on:click={action} href={url} style="--color: {color}" class="center" class:active={$page.url.pathname === url} aria-label={!ariaLabel ? undefined : ariaLabel}>
   <slot />
 </a>
 
 <style>
   .active {
-    border-bottom: solid 1px var(--theme-text);
+    border-bottom: solid 1px var(--color);
   }
 
   a,
@@ -33,23 +34,21 @@
     text-decoration: none;
     font-size: 1.2em;
     font-weight: 700;
-    color: var(--theme-text);
+    color: var(--color);
   }
 
   a:hover {
-    border: solid 2px hsl(var(--theme-text-pri));
+    border: solid 2px var(--color);
     border-radius: 0.25em;
-    color: var(--theme-text-pri);
     cursor: pointer;
   }
 
   a:active {
-    border: solid 2px;
-    color: var(--theme-bg-pri-accent);
+    border: solid 2px var(--color);
   }
 
   a:focus {
-    border: solid;
+    border: solid 2px var(--color);
     outline: none;
   }
 

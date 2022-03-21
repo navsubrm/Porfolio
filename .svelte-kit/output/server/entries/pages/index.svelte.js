@@ -1,5 +1,5 @@
-import { c as create_ssr_component, j as escape, b as add_attribute, v as validate_component } from "../../chunks/index-9f97fac3.js";
-import { L as Link } from "../../chunks/index-697b1af0.js";
+import { c as create_ssr_component, e as escape, b as add_attribute, v as validate_component } from "../../chunks/index-1d0f2202.js";
+import { L as Link } from "../../chunks/index-08ed08b1.js";
 import "seamless-scroll-polyfill";
 import * as emailValidator from "email-validator";
 import dompurify from "dompurify";
@@ -26,7 +26,7 @@ const CardLayout = create_ssr_component(($$result, $$props, $$bindings, slots) =
 });
 var ContentBlock_svelte_svelte_type_style_lang = "";
 const css$c = {
-  code: ".container.svelte-129hjgs{position:relative;background-color:var(--color);color:var(--text);padding:70px 20px}.content-body.svelte-129hjgs{padding:20px 10px}@media only screen and (max-width: 900px){.content-body.svelte-129hjgs{padding:20px 5px}}@media only screen and (max-width: 700px){.content-title.svelte-129hjgs{top:95px}}",
+  code: ".container.svelte-1xfd2qz{position:relative;background-color:var(--color);color:var(--text);padding:70px 0px}.content-body.svelte-1xfd2qz{padding:20px 0px;width:100%}@media only screen and (max-width: 900px){.content-body.svelte-1xfd2qz{padding:20px 0px}}@media only screen and (max-width: 700px){.content-title.svelte-1xfd2qz{top:95px}}",
   map: null
 };
 const ContentBlock = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -37,27 +37,27 @@ const ContentBlock = create_ssr_component(($$result, $$props, $$bindings, slots)
   if ($$props.text === void 0 && $$bindings.text && text2 !== void 0)
     $$bindings.text(text2);
   $$result.css.add(css$c);
-  return `<div class="${"container svelte-129hjgs"}" style="${"--color: " + escape(background2) + "; --text: " + escape(text2) + ";"}"><div class="${"content-title svelte-129hjgs"}">${slots["content-title"] ? slots["content-title"]({}) : ``}</div>
+  return `<div class="${"container svelte-1xfd2qz"}" style="${"--color: " + escape(background2) + "; --text: " + escape(text2) + ";"}"><div class="${"content-title svelte-1xfd2qz"}">${slots["content-title"] ? slots["content-title"]({}) : ``}</div>
 
-	<div class="${"content-body svelte-129hjgs"}">${slots["content-body"] ? slots["content-body"]({}) : ``}</div>
+  <div class="${"content-body svelte-1xfd2qz"}">${slots["content-body"] ? slots["content-body"]({}) : ``}</div>
 </div>`;
 });
 var DesignElement1_svelte_svelte_type_style_lang = "";
 const css$b = {
-  code: ".design-element.svelte-1cuxymo{position:relative;width:80%;margin:0 auto;padding:10px 20px}.design-element.svelte-1cuxymo::before{position:absolute;top:0;left:0;width:70%;height:55%;content:'';border-left:solid 3px hsl(var(--theme-bg-alt));border-top:solid 3px hsl(var(--theme-bg-alt))}.design-element.svelte-1cuxymo::after{position:absolute;bottom:0;right:0;width:70%;height:55%;content:'';border-right:solid 3px hsl(var(--color));border-bottom:solid 3px hsl(var(--color))}.spacing.svelte-1cuxymo{margin:25px}@media only screen and (max-width: 900px){.design-element.svelte-1cuxymo{width:90%}}@media only screen and (max-width: 650px){.design-element.svelte-1cuxymo{padding:10px}.design-element.svelte-1cuxymo::after,.design-element.svelte-1cuxymo::before{display:none}}",
+  code: '.design-element.svelte-jmuxxj{position:relative;width:80%;margin:0 auto;padding:10px 20px}.design-element.svelte-jmuxxj::before{position:absolute;top:0;left:0;width:70%;height:55%;content:"";border-left:solid 3px hsl(var(--theme-bg-alt));border-top:solid 3px hsl(var(--theme-bg-alt))}.design-element.svelte-jmuxxj::after{position:absolute;bottom:0;right:0;width:70%;height:55%;content:"";border-right:solid 3px var(--color);border-bottom:solid 3px var(--color)}.spacing.svelte-jmuxxj{margin:25px}@media only screen and (max-width: 900px){.design-element.svelte-jmuxxj{width:90%}}@media only screen and (max-width: 650px){.design-element.svelte-jmuxxj{padding:10px}.design-element.svelte-jmuxxj::after,.design-element.svelte-jmuxxj::before{display:none}}',
   map: null
 };
 const DesignElement1 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { stripeColor = "--theme-text-about" } = $$props;
+  let { stripeColor = "hsl(var(--theme-text-about))" } = $$props;
   if ($$props.stripeColor === void 0 && $$bindings.stripeColor && stripeColor !== void 0)
     $$bindings.stripeColor(stripeColor);
   $$result.css.add(css$b);
-  return `<div class="${"center center-column design-element svelte-1cuxymo"}" style="${"--color: var(" + escape(stripeColor) + ")"}"><div class="${"spacing svelte-1cuxymo"}">${slots.default ? slots.default({}) : ``}</div>
+  return `<div class="${"center center-column design-element svelte-jmuxxj"}" style="${"--color: " + escape(stripeColor)}"><div class="${"spacing svelte-jmuxxj"}">${slots.default ? slots.default({}) : ``}</div>
 </div>`;
 });
 var AboutContent_svelte_svelte_type_style_lang = "";
 const css$a = {
-  code: "p.svelte-hfkgkf{text-align:justify}.theme-about.svelte-hfkgkf{--text:var(--color-input);margin-bottom:65px}.spacing.svelte-hfkgkf{margin:20px auto}.svelte-hfkgkf{color:var(--color-input)}p.svelte-hfkgkf{line-height:1.5;color:hsl(var(--theme-text-pri))}",
+  code: "p.svelte-rjdwmn{text-align:justify}.theme-about.svelte-rjdwmn{--text:var(--color-input);margin-bottom:65px}.spacing.svelte-rjdwmn{margin:20px auto}.svelte-rjdwmn{color:var(--color-input)}p.svelte-rjdwmn{line-height:1.5;color:hsl(var(--theme-text-pri))}",
   map: null
 };
 let anchor$7 = "about-me";
@@ -65,27 +65,27 @@ let background$7 = "hsla(var(--theme-bg-pri), 1)";
 let text$7 = "hsla(var(--theme-text-about), 1)";
 const AboutContent = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$a);
-  return `<div${add_attribute("id", anchor$7, 0)} style="${"--color-input: " + escape(text$7)}" class="${"svelte-hfkgkf"}">${validate_component(ContentBlock, "ContentBlock").$$render($$result, { background: background$7, text: text$7 }, {}, {
+  return `<div${add_attribute("id", anchor$7, 0)} style="${"--color-input: " + escape(text$7)}" class="${"svelte-rjdwmn"}">${validate_component(ContentBlock, "ContentBlock").$$render($$result, { background: background$7, text: text$7 }, {}, {
     "content-body": () => {
-      return `<span slot="${"content-body"}" class="${"svelte-hfkgkf"}">${validate_component(DesignElement1, "DesignElement1").$$render($$result, { stripeColor: "--theme-text-about" }, {}, {
+      return `<span slot="${"content-body"}" class="${"svelte-rjdwmn"}">${validate_component(DesignElement1, "DesignElement1").$$render($$result, {
+        stripeColor: "hsl(var(--theme-text-about))"
+      }, {}, {
         default: () => {
-          return `<p class="${"text-normal spacing svelte-hfkgkf"}">I am a 24 year Navy veteran with a passion for finding and applying data-driven solutions
-					to improve business outcomes. I have a passion for life-long learning and achieving the
-					best solutions to maximize productivity, quality of work, and quality of life. Together,
-					we can work smart, get it done and be our best in the office and our homes.
-				</p>`;
+          return `<p class="${"text-normal spacing svelte-rjdwmn"}">I am a 24 year Navy veteran with a passion for finding and applying data-driven solutions to improve business outcomes. I have a passion for life-long learning and achieving the best
+          solutions to maximize productivity, quality of work, and quality of life. Together, we can work smart, get it done and be our best in the office and our homes.
+        </p>`;
         }
       })}</span>`;
     },
     "content-title": () => {
-      return `<div slot="${"content-title"}" class="${"center center-column svelte-hfkgkf"}"><h2 class="${"theme-about text-large svelte-hfkgkf"}"><span class="${"svelte-hfkgkf"}">About me</span></h2></div>`;
+      return `<div slot="${"content-title"}" class="${"center center-column svelte-rjdwmn"}"><h2 class="${"theme-about text-large svelte-rjdwmn"}"><span class="${"svelte-rjdwmn"}">About me</span></h2></div>`;
     }
   })}
 </div>`;
 });
 var WebDevelopment_svelte_svelte_type_style_lang = "";
 const css$9 = {
-  code: "h4.svelte-thstqj.svelte-thstqj{color:var(--color-input);margin-bottom:15px;text-align:left;width:100%;font-size:1.5em}p.svelte-thstqj.svelte-thstqj{text-indent:30px;line-height:1.5;text-align:justify;color:hsl(var(--theme-text-pri))}a.svelte-thstqj.svelte-thstqj,a.svelte-thstqj.svelte-thstqj:visited{color:var(--text)}a.svelte-thstqj.svelte-thstqj:hover,a.svelte-thstqj.svelte-thstqj:focus{cursor:pointer;color:hsl(var(--theme-text-black))}#logo-block.svelte-thstqj.svelte-thstqj{padding:30px;margin:15px;gap:65px}#logo-block.svelte-thstqj img.svelte-thstqj{scale:1.7;justify-content:space-evenly;align-items:center}@media only screen and (max-width: 1000px){h4.svelte-thstqj.svelte-thstqj,p.svelte-thstqj.svelte-thstqj{width:90%}#logo-block.svelte-thstqj.svelte-thstqj{gap:20px}#logo-block.svelte-thstqj img.svelte-thstqj{scale:1}}",
+  code: "h4.svelte-113dpe0.svelte-113dpe0{color:var(--color-input);margin-bottom:15px;text-align:left;width:100%;font-size:1.5em}p.svelte-113dpe0.svelte-113dpe0{text-indent:30px;line-height:1.5;text-align:justify;color:hsl(var(--theme-text-pri))}a.svelte-113dpe0.svelte-113dpe0,a.svelte-113dpe0.svelte-113dpe0:visited{color:var(--text)}a.svelte-113dpe0.svelte-113dpe0:hover,a.svelte-113dpe0.svelte-113dpe0:focus{cursor:pointer;color:hsl(var(--theme-text-black))}#logo-block.svelte-113dpe0.svelte-113dpe0{padding:30px;margin:15px;gap:65px}#logo-block.svelte-113dpe0 img.svelte-113dpe0{scale:1.7;justify-content:space-evenly;align-items:center}@media only screen and (max-width: 1000px){h4.svelte-113dpe0.svelte-113dpe0,p.svelte-113dpe0.svelte-113dpe0{width:90%}#logo-block.svelte-113dpe0.svelte-113dpe0{gap:20px}#logo-block.svelte-113dpe0 img.svelte-113dpe0{scale:1}}",
   map: null
 };
 let anchor$6 = "web-development-sub";
@@ -93,34 +93,29 @@ let background$6 = "hsla(var(--theme-bg-pri), 1)";
 let text$6 = "hsla(var(--theme-text-experience), 1)";
 const WebDevelopment = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css$9);
-  return `<div${add_attribute("id", anchor$6, 0)} style="${"--color-input: " + escape(text$6)}" class="${"svelte-thstqj"}">${validate_component(ContentBlock, "ContentBlock").$$render($$result, { background: background$6, text: text$6 }, {}, {
+  return `<div${add_attribute("id", anchor$6, 0)} style="${"--color-input: " + escape(text$6)}" class="${"svelte-113dpe0"}">${validate_component(ContentBlock, "ContentBlock").$$render($$result, { background: background$6, text: text$6 }, {}, {
     "content-body": () => {
-      return `<span slot="${"content-body"}">${validate_component(DesignElement1, "DesignElement1").$$render($$result, { stripeColor: "--theme-text-experience" }, {}, {
+      return `<span slot="${"content-body"}">${validate_component(DesignElement1, "DesignElement1").$$render($$result, { stripeColor: text$6 }, {}, {
         default: () => {
-          return `<h4 class="${"text-normal svelte-thstqj"}"><strong>More than three years of web-development:</strong></h4>
-				<p class="${"text-normal svelte-thstqj"}">I have administered Microsoft SharePoint sites across three organizations. When COVID-19
-					changed work environments gobally, the US Navy was no exception. At the onset I took a
-					break from my MBA to focus on learning HTML, CSS, JavaScript to quickly develop in-house
-					solutions to telework obstacles. Though dramatically improved from where I started, I am
-					actively seeking a mentor and some team projects with which to engage. If you stumbled
-					across this site and are interested in mentoring or collaborating, contact me.
-				</p>
-				<p class="${"text-normal svelte-thstqj"}">I have experience with the following tools and frameworks among others:
-				</p>
-				<div id="${"logo-block"}" class="${"center svelte-thstqj"}"><img src="${"/css-3.svg"}" alt="${"CSS logo"}" class="${"svelte-thstqj"}">
-					<img src="${"/html-5.svg"}" alt="${"HTML logo"}" class="${"svelte-thstqj"}">
-					<img src="${"/javascript.svg"}" alt="${"JavaScript logo"}" class="${"svelte-thstqj"}">
-					<img src="${"/mongodb.svg"}" alt="${"Mongo DB logo"}" class="${"svelte-thstqj"}">
-					<img src="${"/node.svg"}" alt="${"Node logo"}" class="${"svelte-thstqj"}">
-					<img src="${"/reactjs.svg"}" alt="${"React JS logo"}" class="${"svelte-thstqj"}">
-					<img src="${"/svelte.svg"}" alt="${"Svelte logo"}" class="${"svelte-thstqj"}"></div>
-				<p class="${"text-normal svelte-thstqj"}">I have built apps for tracking personnel security clearance data, organizational
-					onboarding programs, a submarine communications simulator, and trouble ticket management
-					along with smaller personal projects, which I can share from my <a aria-label="${"Link to navsubrm's git hub profile"}" href="${"https://github.com/navsubrm"}" class="${"svelte-thstqj"}">GitHub</a>
-					or
-					<a aria-label="${"Link to navsubrm's Codepen profile"}" href="${"https://codepen.io/navsubrm"}" class="${"svelte-thstqj"}">Codepen</a> if you are interested. I keep most of my work private due to its purpose, but if you ask
-					and I can verify you, I would be happy to share them.
-				</p>`;
+          return `<h4 class="${"text-normal svelte-113dpe0"}"><strong>More than three years of web-development:</strong></h4>
+        <p class="${"text-normal svelte-113dpe0"}">I have administered Microsoft SharePoint sites across three organizations. When COVID-19 changed work environments gobally, the US Navy was no exception. At the onset I took a break from my
+          MBA to focus on learning HTML, CSS, JavaScript to quickly develop in-house solutions to telework obstacles. Though dramatically improved from where I started, I am actively seeking a mentor
+          and some team projects with which to engage. If you stumbled across this site and are interested in mentoring or collaborating, contact me.
+        </p>
+        <p class="${"text-normal svelte-113dpe0"}">I have experience with the following tools and frameworks among others:</p>
+        <div id="${"logo-block"}" class="${"center svelte-113dpe0"}"><img src="${"/css-3.svg"}" alt="${"CSS logo"}" class="${"svelte-113dpe0"}">
+          <img src="${"/html-5.svg"}" alt="${"HTML logo"}" class="${"svelte-113dpe0"}">
+          <img src="${"/javascript.svg"}" alt="${"JavaScript logo"}" class="${"svelte-113dpe0"}">
+          <img src="${"/mongodb.svg"}" alt="${"Mongo DB logo"}" class="${"svelte-113dpe0"}">
+          <img src="${"/node.svg"}" alt="${"Node logo"}" class="${"svelte-113dpe0"}">
+          <img src="${"/reactjs.svg"}" alt="${"React JS logo"}" class="${"svelte-113dpe0"}">
+          <img src="${"/svelte.svg"}" alt="${"Svelte logo"}" class="${"svelte-113dpe0"}"></div>
+        <p class="${"text-normal svelte-113dpe0"}">I have built apps for tracking personnel security clearance data, organizational onboarding programs, a submarine communications simulator, and trouble ticket management along with smaller
+          personal projects, which I can share from my <a aria-label="${"Link to navsubrm's git hub profile"}" href="${"https://github.com/navsubrm"}" class="${"svelte-113dpe0"}">GitHub</a>
+          or
+          <a aria-label="${"Link to navsubrm's Codepen profile"}" href="${"https://codepen.io/navsubrm"}" class="${"svelte-113dpe0"}">Codepen</a> if you are interested. I keep most of my work private due to its purpose, but if you ask and
+          I can verify you, I would be happy to share them.
+        </p>`;
         }
       })}</span>`;
     }
@@ -129,7 +124,7 @@ const WebDevelopment = create_ssr_component(($$result, $$props, $$bindings, slot
 });
 var GeneralSkills_svelte_svelte_type_style_lang = "";
 const css$8 = {
-  code: "h4.svelte-w98dpe{color:var(--color-input);margin-bottom:15px;font-size:1.5em}p.svelte-w98dpe{text-indent:30px;line-height:1.5;color:hsl(var(--theme-text-pri));text-align:justify}.list-pri.svelte-w98dpe,.list-sub.svelte-w98dpe{text-decoration:none;margin-left:60px}",
+  code: "h4.svelte-55hyw3{color:var(--color-input);margin-bottom:15px;font-size:1.5em}p.svelte-55hyw3{text-indent:30px;line-height:1.5;color:hsl(var(--theme-text-pri));text-align:justify}.list-pri.svelte-55hyw3,.list-sub.svelte-55hyw3{text-decoration:none;margin-left:60px}",
   map: null
 };
 let anchor$5 = "general-sub";
@@ -139,26 +134,21 @@ const GeneralSkills = create_ssr_component(($$result, $$props, $$bindings, slots
   $$result.css.add(css$8);
   return `<div${add_attribute("id", anchor$5, 0)} style="${"--color-input: " + escape(text$5)}">${validate_component(ContentBlock, "ContentBlock").$$render($$result, { background: background$5, text: text$5 }, {}, {
     "content-body": () => {
-      return `<span slot="${"content-body"}">${validate_component(DesignElement1, "DesignElement1").$$render($$result, { stripeColor: "--theme-text-experience" }, {}, {
+      return `<span slot="${"content-body"}">${validate_component(DesignElement1, "DesignElement1").$$render($$result, { stripeColor: text$5 }, {}, {
         default: () => {
-          return `<h4 class="${"text-normal svelte-w98dpe"}"><strong>More than two decades of professional experience in the US Navy:</strong></h4>
-				<p class="${"text-normal svelte-w98dpe"}">Served seven of my first sixteen years as a Chief Petty Officer, training and leading five
-					to fifteen person submarine communications and electronic warfare teams.
-				</p>
-				<p class="${"text-normal svelte-w98dpe"}">The last decade has been as an Information Warfare Officer, evaluating submarine
-					communications and network readiness. Specifically addressing:
-				</p>
-				<ul class="${"list-pri text-normal svelte-w98dpe"}"><li>Front-line Supervisor and department head training.</li>
-					<li>Communications (COMSEC) security material policy compliance.</li>
-					<li>Personnel and phyiscal security policy compliance.</li>
-					<li>Cyber security program management:</li>
-					<ul class="${"list-sub svelte-w98dpe"}"><li>Policy compliance</li>
-						<li>Configuration managment</li>
-						<li>Disaster recovery</li>
-						<li>Incident response</li></ul></ul>
-				<p class="${"text-normal svelte-w98dpe"}">I also spent six years as the team lead of a fifty person crisis and emergency management
-					team developing and testing response, recovery, and continuity of operation plans.
-				</p>`;
+          return `<h4 class="${"text-normal svelte-55hyw3"}"><strong>More than two decades of professional experience in the US Navy:</strong></h4>
+        <p class="${"text-normal svelte-55hyw3"}">Served seven of my first sixteen years as a Chief Petty Officer, training and leading five to fifteen person submarine communications and electronic warfare teams.</p>
+        <p class="${"text-normal svelte-55hyw3"}">The last decade has been as an Information Warfare Officer, evaluating submarine communications and network readiness. Specifically addressing:</p>
+        <ul class="${"list-pri text-normal svelte-55hyw3"}"><li>Front-line Supervisor and department head training.</li>
+          <li>Communications (COMSEC) security material policy compliance.</li>
+          <li>Personnel and phyiscal security policy compliance.</li>
+          <li>Cyber security program management:</li>
+          <ul class="${"list-sub svelte-55hyw3"}"><li>Policy compliance</li>
+            <li>Configuration managment</li>
+            <li>Disaster recovery</li>
+            <li>Incident response</li></ul></ul>
+        <p class="${"text-normal svelte-55hyw3"}">I also spent six years as the team lead of a fifty person crisis and emergency management team developing and testing response, recovery, and continuity of operation plans.
+        </p>`;
         }
       })}</span>`;
     }
@@ -167,7 +157,7 @@ const GeneralSkills = create_ssr_component(($$result, $$props, $$bindings, slots
 });
 var CyberSecurity_svelte_svelte_type_style_lang = "";
 const css$7 = {
-  code: "h4.svelte-10e6zgc{color:var(--color-input);margin-bottom:15px;font-size:1.5em}p.svelte-10e6zgc{text-indent:30px;line-height:1.5;color:hsl(var(--theme-text-pri));text-align:justify}.list-pri.svelte-10e6zgc{text-decoration:none;margin-left:60px}",
+  code: "h4.svelte-m7wv14{color:var(--color-input);margin-bottom:15px;font-size:1.5em}p.svelte-m7wv14{text-indent:30px;line-height:1.5;color:hsl(var(--theme-text-pri));text-align:justify}.list-pri.svelte-m7wv14{text-decoration:none;margin-left:60px}",
   map: null
 };
 let anchor$4 = "network-security-sub";
@@ -177,15 +167,13 @@ const CyberSecurity = create_ssr_component(($$result, $$props, $$bindings, slots
   $$result.css.add(css$7);
   return `<div${add_attribute("id", anchor$4, 0)} style="${"--color-input: " + escape(text$4)}">${validate_component(ContentBlock, "ContentBlock").$$render($$result, { background: background$4, text: text$4 }, {}, {
     "content-body": () => {
-      return `<span slot="${"content-body"}">${validate_component(DesignElement1, "DesignElement1").$$render($$result, { stripeColor: "--theme-text-experience" }, {}, {
+      return `<span slot="${"content-body"}">${validate_component(DesignElement1, "DesignElement1").$$render($$result, { stripeColor: text$4 }, {}, {
         default: () => {
-          return `<h4 class="${"text-normal svelte-10e6zgc"}"><strong>More than ten years of Cyber Security Experience:</strong></h4>
-				<p class="${"text-normal svelte-10e6zgc"}">My last ten years have been spent observing emerging threats while developing policies and
-					analytics adopted across the submarine force by which to measure cyber resilience. As an
-					inspector and mentor of shipboard network security teams, I work to evaluate risk and
-					prioritize elements of Navy policy to achieve the most robust network posture possible.
-				</p>
-				<ul class="${"list-pri svelte-10e6zgc"}"><li aria-label="${"COMPTIA Security+ Certificate"}">COMPTIA Security+ Certified since 2015</li></ul>`;
+          return `<h4 class="${"text-normal svelte-m7wv14"}"><strong>More than ten years of Cyber Security Experience:</strong></h4>
+        <p class="${"text-normal svelte-m7wv14"}">My last ten years have been spent observing emerging threats while developing policies and analytics adopted across the submarine force by which to measure cyber resilience. As an inspector
+          and mentor of shipboard network security teams, I work to evaluate risk and prioritize elements of Navy policy to achieve the most robust network posture possible.
+        </p>
+        <ul class="${"list-pri svelte-m7wv14"}"><li aria-label="${"COMPTIA Security+ Certificate"}">COMPTIA Security+ Certified since 2015</li></ul>`;
         }
       })}</span>`;
     }
@@ -194,7 +182,7 @@ const CyberSecurity = create_ssr_component(($$result, $$props, $$bindings, slots
 });
 var SecurityManagement_svelte_svelte_type_style_lang = "";
 const css$6 = {
-  code: "h4.svelte-169qwki{color:var(--color-input);margin-bottom:15px;font-size:1.5em}p.svelte-169qwki{text-indent:30px;line-height:1.5;color:hsl(var(--theme-text-pri));text-align:justify}a.svelte-169qwki,a.svelte-169qwki:visited{color:var(--text)}a.svelte-169qwki:hover,a.svelte-169qwki:focus{cursor:pointer;color:hsl(var(--theme-text-black))}",
+  code: "h4.svelte-1vimv1c{color:var(--color-input);margin-bottom:15px;font-size:1.5em}p.svelte-1vimv1c{text-indent:30px;line-height:1.5;color:hsl(var(--theme-text-pri));text-align:justify}a.svelte-1vimv1c,a.svelte-1vimv1c:visited{color:var(--text)}a.svelte-1vimv1c:hover,a.svelte-1vimv1c:focus{cursor:pointer;color:hsl(var(--theme-text-black))}",
   map: null
 };
 let anchor$3 = "security-management-sub";
@@ -204,21 +192,17 @@ const SecurityManagement = create_ssr_component(($$result, $$props, $$bindings, 
   $$result.css.add(css$6);
   return `<div${add_attribute("id", anchor$3, 0)} style="${"--color-input: " + escape(text$3)}">${validate_component(ContentBlock, "ContentBlock").$$render($$result, { background: background$3, text: text$3 }, {}, {
     "content-body": () => {
-      return `<span slot="${"content-body"}">${validate_component(DesignElement1, "DesignElement1").$$render($$result, { stripeColor: "--theme-text-experience" }, {}, {
+      return `<span slot="${"content-body"}">${validate_component(DesignElement1, "DesignElement1").$$render($$result, { stripeColor: text$3 }, {}, {
         default: () => {
-          return `<h4 class="${"text-normal svelte-169qwki"}"><strong>More than 15 years of Physical and Personnel Security Experience:</strong></h4>
-				<p class="${"text-normal svelte-169qwki"}">I have managed tens of thousands of requests for access to classified materiels and
-					facilities, managed background investigations, oversaw inquires to security violations and
-					incidents, certified secure facilities, and developed security policy.
-				</p>
-				<p class="${"text-normal svelte-169qwki"}">I have managed small and large projects reducing cost, waste, and improving classified
-					materiel management. From producing clean alternative energy by transitioning destruction
-					processes to waste-to-energy conversion facilities to larger facility modificaitons, I am
-					passionate about finding innovative security solutions.
-				</p>
-				<p class="${"text-normal svelte-169qwki"}">Department of Defense Security Professional Education Development (SPeD) ceritificationed
-					for Security Fundamentals Professional and Physical Security since 2018.
-					<a href="${"https://www.cdse.edu/Certification/About-SP\u0113D-Certification/"}" title="${"SPeD about page"}" class="${"svelte-169qwki"}">Click here for details on the SPeD program.</a></p>`;
+          return `<h4 class="${"text-normal svelte-1vimv1c"}"><strong>More than 15 years of Physical and Personnel Security Experience:</strong></h4>
+        <p class="${"text-normal svelte-1vimv1c"}">I have managed tens of thousands of requests for access to classified materiels and facilities, managed background investigations, oversaw inquires to security violations and incidents,
+          certified secure facilities, and developed security policy.
+        </p>
+        <p class="${"text-normal svelte-1vimv1c"}">I have managed small and large projects reducing cost, waste, and improving classified materiel management. From producing clean alternative energy by transitioning destruction processes to
+          waste-to-energy conversion facilities to larger facility modificaitons, I am passionate about finding innovative security solutions.
+        </p>
+        <p class="${"text-normal svelte-1vimv1c"}">Department of Defense Security Professional Education Development (SPeD) ceritificationed for Security Fundamentals Professional and Physical Security since 2018.
+          <a href="${"https://www.cdse.edu/Certification/About-SP\u0113D-Certification/"}" title="${"SPeD about page"}" class="${"svelte-1vimv1c"}">Click here for details on the SPeD program.</a></p>`;
         }
       })}</span>`;
     }
@@ -227,7 +211,7 @@ const SecurityManagement = create_ssr_component(($$result, $$props, $$bindings, 
 });
 var Education_svelte_svelte_type_style_lang = "";
 const css$5 = {
-  code: "h4.svelte-17vskj9{color:var(--color-input);margin-bottom:15px;font-size:1.5em}p.svelte-17vskj9{text-indent:30px;line-height:1.5;color:hsl(var(--theme-text-pri));text-align:justify}.list-pri.svelte-17vskj9,.list-sec.svelte-17vskj9{text-decoration:none;margin-left:60px;line-height:1.5}.list-pri.svelte-17vskj9{color:hsl(var(--color-input))}.list-sec.svelte-17vskj9{color:hsl(var(--theme-text-pri))}a.svelte-17vskj9,a.svelte-17vskj9:visited{color:var(--text)}a.svelte-17vskj9:hover,a.svelte-17vskj9:focus{cursor:pointer;color:hsl(var(--theme-text-black))}",
+  code: "h4.svelte-lpc7u6{color:var(--color-input);margin-bottom:15px;font-size:1.5em}p.svelte-lpc7u6{text-indent:30px;line-height:1.5;color:hsl(var(--theme-text-pri));text-align:justify}.list-pri.svelte-lpc7u6,.list-sec.svelte-lpc7u6{text-decoration:none;margin-left:60px;line-height:1.5}.list-pri.svelte-lpc7u6{color:hsl(var(--color-input))}.list-sec.svelte-lpc7u6{color:hsl(var(--theme-text-pri))}a.svelte-lpc7u6,a.svelte-lpc7u6:visited{color:var(--text)}a.svelte-lpc7u6:hover,a.svelte-lpc7u6:focus{cursor:pointer;color:hsl(var(--theme-text-black))}",
   map: null
 };
 let anchor$2 = "education-sub";
@@ -237,34 +221,32 @@ const Education = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   $$result.css.add(css$5);
   return `<div${add_attribute("id", anchor$2, 0)} style="${"--color-input: " + escape(text$2)}">${validate_component(ContentBlock, "ContentBlock").$$render($$result, { background: background$2, text: text$2 }, {}, {
     "content-body": () => {
-      return `<span slot="${"content-body"}">${validate_component(DesignElement1, "DesignElement1").$$render($$result, { stripeColor: "--theme-text-experience" }, {}, {
+      return `<span slot="${"content-body"}">${validate_component(DesignElement1, "DesignElement1").$$render($$result, { stripeColor: text$2 }, {}, {
         default: () => {
-          return `<h4 class="${"text-normal svelte-17vskj9"}"><strong>Professional Certifications/Education:</strong></h4>
-				<p class="${"text-normal svelte-17vskj9"}">I hold civilian and Department of Defense certifications in Cyber, Personnel and Physical
-					Security along with a Bachelor&#39;s degree in Business Administration from Excelsior College.
-					I am currently four classes from completing an MBA with an emphasis in
-					Technology/Innovation Management.
-				</p>
+          return `<h4 class="${"text-normal svelte-lpc7u6"}"><strong>Professional Certifications/Education:</strong></h4>
+        <p class="${"text-normal svelte-lpc7u6"}">I hold civilian and Department of Defense certifications in Cyber, Personnel and Physical Security along with a Bachelor&#39;s degree in Business Administration from Excelsior College. I am
+          currently four classes from completing an MBA with an emphasis in Technology/Innovation Management.
+        </p>
 
-				<ul class="${"list-pri svelte-17vskj9"}"><li class="${"text-normal"}">Security Professional Education and Development (SPeD) certifications:
-						<ul class="${"list-sec svelte-17vskj9"}"><li><a title="${"Center for Security Excellence SFPC certification webpage."}" href="${"https://www.cdse.edu/certification/sfpc.html"}" class="${"svelte-17vskj9"}">Security Professional Fundamentals</a> (SFPC) 3+ years
-							</li>
-							<li><a title="${"Center for Security Excellence PSC certification webpage."}" href="${"https://www.cdse.edu/certification/psc.html"}" class="${"svelte-17vskj9"}">Physical Security Certification</a> (PSC) 3+ years
-							</li></ul></li>
+        <ul class="${"list-pri svelte-lpc7u6"}"><li class="${"text-normal"}">Security Professional Education and Development (SPeD) certifications:
+            <ul class="${"list-sec svelte-lpc7u6"}"><li><a title="${"Center for Security Excellence SFPC certification webpage."}" href="${"https://www.cdse.edu/certification/sfpc.html"}" class="${"svelte-lpc7u6"}">Security Professional Fundamentals</a> (SFPC) 3+ years
+              </li>
+              <li><a title="${"Center for Security Excellence PSC certification webpage."}" href="${"https://www.cdse.edu/certification/psc.html"}" class="${"svelte-lpc7u6"}">Physical Security Certification</a> (PSC) 3+ years
+              </li></ul></li>
 
-					<li class="${"text-normal"}">Additional Military Training:
-						<ul class="${"list-sec svelte-17vskj9"}"><li><a title="${"Navy COMSEC Management System webpage."}" href="${"https://www.navifor.usff.navy.mil/ncms/"}" class="${"svelte-17vskj9"}">Navy Communications Security Management System</a> (NCMS) certified inspector 10+ years
-							</li>
-							<li>Information Systems Security Manager 7+ years</li>
-							<li>Operational Security Officer 5+ years</li>
-							<li>Emergency Management Officer 5+ years</li>
-							<li>Classified Material Control Officer 10+ years</li>
-							<li>Command Equal Opportunity Officer 2+ years</li></ul></li>
+          <li class="${"text-normal"}">Additional Military Training:
+            <ul class="${"list-sec svelte-lpc7u6"}"><li><a title="${"Navy COMSEC Management System webpage."}" href="${"https://www.navifor.usff.navy.mil/ncms/"}" class="${"svelte-lpc7u6"}">Navy Communications Security Management System</a> (NCMS) certified inspector 10+ years
+              </li>
+              <li>Information Systems Security Manager 7+ years</li>
+              <li>Operational Security Officer 5+ years</li>
+              <li>Emergency Management Officer 5+ years</li>
+              <li>Classified Material Control Officer 10+ years</li>
+              <li>Command Equal Opportunity Officer 2+ years</li></ul></li>
 
-					<li class="${"text-normal"}">Non-military Education:
-						<ul class="${"list-sec svelte-17vskj9"}"><li>Bachelor&#39;s degree in Business Administration (2015)</li>
-							<li>COMPTIA Security+ (2015)</li>
-							<li>Sigma Beta Delta National Honor Society for Business (2019).</li></ul></li></ul>`;
+          <li class="${"text-normal"}">Non-military Education:
+            <ul class="${"list-sec svelte-lpc7u6"}"><li>Bachelor&#39;s degree in Business Administration (2015)</li>
+              <li>COMPTIA Security+ (2015)</li>
+              <li>Sigma Beta Delta National Honor Society for Business (2019).</li></ul></li></ul>`;
         }
       })}</span>`;
     }
@@ -273,52 +255,72 @@ const Education = create_ssr_component(($$result, $$props, $$bindings, slots) =>
 });
 var ExperienceContent_svelte_svelte_type_style_lang = "";
 const css$4 = {
-  code: ".theme-experience.svelte-1tz3jla.svelte-1tz3jla{--text:var(--color-input)}nav.svelte-1tz3jla.svelte-1tz3jla{position:sticky;top:63px;margin:5px;z-index:1;transition:opacity 0.2s linear;opacity:0}nav.svelte-1tz3jla.svelte-1tz3jla:hover{opacity:1}.show{opacity:1 !important}nav.svelte-1tz3jla ul.svelte-1tz3jla{list-style:none;gap:25px}.svelte-1tz3jla.svelte-1tz3jla{color:var(--color-input)}",
+  code: ".theme-experience.svelte-4s8ez9.svelte-4s8ez9{--text:var(--color-input)}nav.svelte-4s8ez9.svelte-4s8ez9{position:sticky;top:58px;z-index:1;width:100%;transition:opacity 0.2s linear;opacity:0;background-color:hsla(var(--theme-bg-pri), 1)}nav.svelte-4s8ez9.svelte-4s8ez9:hover{opacity:1}.show{opacity:1 !important}nav.svelte-4s8ez9 ul.svelte-4s8ez9{list-style:none;gap:25px;text-align:center;padding:5px}.svelte-4s8ez9.svelte-4s8ez9{color:var(--color-input)}@media only screen and (max-width: 600px){nav.svelte-4s8ez9.svelte-4s8ez9{top:110px}nav.svelte-4s8ez9 ul.svelte-4s8ez9{gap:10px;font-size:0.8em}}",
   map: null
 };
 let anchor$1 = "experience";
 let background$1 = "hsla(var(--theme-bg-pri), 1)";
-let text$1 = "hsla(var(--theme-text-experience))";
+let text$1 = "hsla(var(--theme-text-experience), 1)";
 const ExperienceContent = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let expMenu;
   $$result.css.add(css$4);
   return `
 
-<div${add_attribute("id", anchor$1, 0)} style="${"--color-input: " + escape(text$1)}" class="${"svelte-1tz3jla"}">${validate_component(ContentBlock, "ContentBlock").$$render($$result, { background: background$1, text: text$1 }, {}, {
+<div${add_attribute("id", anchor$1, 0)} style="${"--color-input: " + escape(text$1)}" class="${"svelte-4s8ez9"}">${validate_component(ContentBlock, "ContentBlock").$$render($$result, { background: background$1, text: text$1 }, {}, {
     "content-body": () => {
-      return `<span slot="${"content-body"}" class="${"center center-column svelte-1tz3jla"}"><nav class="${"svelte-1tz3jla"}"${add_attribute("this", expMenu, 0)}><ul class="${"center svelte-1tz3jla"}"><li class="${"svelte-1tz3jla"}">${validate_component(Link, "Link").$$render($$result, { url: "#web-development-sub" }, {}, {
+      return `<span slot="${"content-body"}" class="${"center center-column svelte-4s8ez9"}"><nav class="${"svelte-4s8ez9"}"${add_attribute("this", expMenu, 0)}><ul class="${"center svelte-4s8ez9"}"><li class="${"svelte-4s8ez9"}">${validate_component(Link, "Link").$$render($$result, {
+        url: "#web-development-sub",
+        "aria-label": "link to web development experience.",
+        color: text$1
+      }, {}, {
         default: () => {
           return `Web Development`;
         }
       })}</li>
-					<li class="${"svelte-1tz3jla"}">${validate_component(Link, "Link").$$render($$result, { url: "#general-sub" }, {}, {
+          <li class="${"svelte-4s8ez9"}">${validate_component(Link, "Link").$$render($$result, {
+        url: "#general-sub",
+        color: text$1,
+        "aria-label": "link to general information about professional military history."
+      }, {}, {
         default: () => {
           return `General Skills`;
         }
       })}</li>
-					<li class="${"svelte-1tz3jla"}">${validate_component(Link, "Link").$$render($$result, { url: "#network-security-sub" }, {}, {
+          <li class="${"svelte-4s8ez9"}">${validate_component(Link, "Link").$$render($$result, {
+        url: "#network-security-sub",
+        color: text$1,
+        "aria-label": "link to content about network security work history."
+      }, {}, {
         default: () => {
           return `Network Security`;
         }
       })}</li>
-					<li class="${"svelte-1tz3jla"}">${validate_component(Link, "Link").$$render($$result, { url: "#security-management-sub" }, {}, {
+          <li class="${"svelte-4s8ez9"}">${validate_component(Link, "Link").$$render($$result, {
+        url: "#security-management-sub",
+        color: text$1,
+        "aria-label": "link to personnel and information security history."
+      }, {}, {
         default: () => {
           return `Security Management`;
         }
       })}</li>
-					<li class="${"svelte-1tz3jla"}">${validate_component(Link, "Link").$$render($$result, { url: "#education-sub" }, {}, {
+          <li class="${"svelte-4s8ez9"}">${validate_component(Link, "Link").$$render($$result, {
+        url: "#education-sub",
+        color: text$1,
+        "aria-label": "link to formal education and certification history."
+      }, {}, {
         default: () => {
           return `Education`;
         }
       })}</li></ul></nav>
-			${validate_component(WebDevelopment, "WebDevelopment").$$render($$result, {}, {}, {})}
-			${validate_component(GeneralSkills, "GeneralSkills").$$render($$result, {}, {}, {})}
-			${validate_component(CyberSecurity, "CyberSecurity").$$render($$result, {}, {}, {})}
-			${validate_component(SecurityManagement, "SecurityManagement").$$render($$result, {}, {}, {})}
-			${validate_component(Education, "Education").$$render($$result, {}, {}, {})}</span>`;
+      ${validate_component(WebDevelopment, "WebDevelopment").$$render($$result, {}, {}, {})}
+      ${validate_component(GeneralSkills, "GeneralSkills").$$render($$result, {}, {}, {})}
+      ${validate_component(CyberSecurity, "CyberSecurity").$$render($$result, {}, {}, {})}
+      ${validate_component(SecurityManagement, "SecurityManagement").$$render($$result, {}, {}, {})}
+      ${validate_component(Education, "Education").$$render($$result, {}, {}, {})}</span>`;
     },
     "content-title": () => {
-      return `<div slot="${"content-title"}" class="${"center center-column svelte-1tz3jla"}"><h2 class="${"theme-experience text-large svelte-1tz3jla"}"><span class="${"svelte-1tz3jla"}">Experience</span></h2></div>`;
+      return `<div slot="${"content-title"}" class="${"center center-column svelte-4s8ez9"}"><h2 class="${"theme-experience text-large svelte-4s8ez9"}"><span class="${"svelte-4s8ez9"}">Experience</span></h2></div>`;
     }
   })}
 </div>`;
@@ -350,12 +352,12 @@ const Button = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 var DesignElement2_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: ".design-base.svelte-j5nv43{margin:0 auto;background:hsla(var(--theme-bg-pri), 1)}.rotate-element.svelte-j5nv43{background:linear-gradient(\n			var(--gradient-angle),\n			hsl(var(--bg-color)) 0%,\n			hsl(var(--bg-color)) 45%,\n			hsl(var(--color)) 45%,\n			hsl(var(--color)) 55%,\n			hsl(var(--bg-color)) 55%,\n			hsl(var(--bg-color)) 100%\n		);width:calc(var(--width) + 5px);height:calc(var(--height) + 5px)}@media only screen and (max-width: 900px){.design-element.svelte-j5nv43{width:90%}.rotate-element.svelte-j5nv43{background:hsl(var(--bg-color))}}",
+  code: ".design-base.svelte-nddi9s{margin:0 auto;background:hsla(var(--theme-bg-pri), 1)}.rotate-element.svelte-nddi9s{background:linear-gradient(var(--gradient-angle), var(--bg-color) 0%, var(--bg-color) 45%, var(--color) 45%, var(--color) 55%, var(--bg-color) 55%, var(--bg-color) 100%);width:calc(var(--width) + 5px);height:calc(var(--height) + 5px)}@media only screen and (max-width: 900px){.design-element.svelte-nddi9s{width:90%}.rotate-element.svelte-nddi9s{background:var(--bg-color)}}",
   map: null
 };
 const DesignElement2 = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { background: background2 = "--theme-bg-pri" } = $$props;
-  let { tracer = "--theme-text-contact" } = $$props;
+  let { background: background2 = "hsl(var(--theme-bg-pri))" } = $$props;
+  let { tracer = "hsl(var(--theme-text-contact))" } = $$props;
   let { sourceElement } = $$props;
   let height;
   let width;
@@ -369,7 +371,7 @@ const DesignElement2 = create_ssr_component(($$result, $$props, $$bindings, slot
   $$result.css.add(css$2);
   return `
 
-<div class="${"center center-column design-base svelte-j5nv43"}" style="${"--color: var(" + escape(tracer) + "); --bg-color: var(" + escape(background2) + "); --height: " + escape(height) + "px; --width: " + escape(width) + "px; --gradient-angle: " + escape(gradientAngle) + "deg"}"><div class="${"center design-element svelte-j5nv43"}"><div class="${"center rotate-element svelte-j5nv43"}"><div class="${"center base-element"}" style="${"z-index: 1"}"${add_attribute("this", sourceElement, 0)}>${slots.default ? slots.default({}) : ``}</div></div></div>
+<div class="${"center center-column design-base svelte-nddi9s"}" style="${"--color: " + escape(tracer) + "; --bg-color: " + escape(background2) + "; --height: " + escape(height) + "px; --width: " + escape(width) + "px; --gradient-angle: " + escape(gradientAngle) + "deg"}"><div class="${"center design-element svelte-nddi9s"}"><div class="${"center rotate-element svelte-nddi9s"}"><div class="${"center base-element"}" style="${"z-index: 1"}"${add_attribute("this", sourceElement, 0)}>${slots.default ? slots.default({}) : ``}</div></div></div>
 </div>`;
 });
 var ContactContent_svelte_svelte_type_style_lang = "";
@@ -430,11 +432,7 @@ const ContactContent = create_ssr_component(($$result, $$props, $$bindings, slot
   $$result.css.add(css$1);
   return `<div${add_attribute("id", anchor, 0)} style="${"--color-input: " + escape(text)}">${validate_component(ContentBlock, "ContentBlock").$$render($$result, { background, text }, {}, {
     "content-body": () => {
-      return `<span slot="${"content-body"}">${validate_component(DesignElement2, "DesignElement2").$$render($$result, {
-        background: "--theme-bg-pri",
-        tracer: "--theme-text-contact",
-        sourceElement
-      }, {}, {
+      return `<span slot="${"content-body"}">${validate_component(DesignElement2, "DesignElement2").$$render($$result, { background, tracer: text, sourceElement }, {}, {
         default: () => {
           return `<div class="${"center contact svelte-2bt1n3"}"><form action="${"#"}" id="${"contact-form"}" class="${"form svelte-2bt1n3"}"><label for="${"first-name"}" class="${"svelte-2bt1n3"}">first name: </label>
             <input id="${"first-name"}" type="${"text"}" size="${"50"}" placeholder="${"First Name"}" class="${"svelte-2bt1n3"}"${add_attribute("value", fName, 0)}>

@@ -2077,4 +2077,4 @@ var internal = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   validate_store,
   xlink_attr
 }, Symbol.toStringTag, { value: "Module" }));
-export { subscribe as a, add_attribute as b, create_ssr_component as c, safe_not_equal as d, get_store_value as e, identity as f, getContext as g, internal as h, is_function as i, escape as j, missing_component as m, noop as n, run_all as r, setContext as s, validate_component as v };
+export { subscribe as a, add_attribute as b, create_ssr_component as c, safe_not_equal as d, escape as e, get_store_value as f, getContext as g, identity as h, is_function as i, internal as j, missing_component as m, noop as n, run_all as r, setContext as s, validate_component as v };

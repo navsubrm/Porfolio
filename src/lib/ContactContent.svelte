@@ -104,7 +104,7 @@
     </div>
 
     <span slot="content-body">
-      <DesignElement2 background={"--theme-bg-pri"} tracer={"--theme-text-contact"} {sourceElement}>
+      <DesignElement2 {background} tracer={text} {sourceElement}>
         <div class="center contact">
           <form action="#" id="contact-form" class="form" on:submit={messageSubmit}>
             <label for="first-name">first name: </label>

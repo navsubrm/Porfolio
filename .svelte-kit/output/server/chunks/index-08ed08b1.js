@@ -1,4 +1,4 @@
-import { g as getContext, c as create_ssr_component, a as subscribe, b as add_attribute, n as noop, d as safe_not_equal, r as run_all, i as is_function, e as get_store_value, f as identity, h as internal } from "./index-9f97fac3.js";
+import { g as getContext, c as create_ssr_component, a as subscribe, b as add_attribute, e as escape, n as noop, d as safe_not_equal, r as run_all, i as is_function, f as get_store_value, h as identity, j as internal } from "./index-1d0f2202.js";
 import "seamless-scroll-polyfill";
 const getStores = () => {
   const stores = getContext("__svelte__");
@@ -27,7 +27,7 @@ const page = {
 };
 var Link_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".active.svelte-11a7qmy{border-bottom:solid 1px var(--theme-text)}a.svelte-11a7qmy,a.svelte-11a7qmy:visited{padding:5px 7px;-webkit-transition:border 0.5s ease, color 0.5s ease;transition:border 0.5s ease, color 0.5s ease;text-decoration:none;font-size:1.2em;font-weight:700;color:var(--theme-text)}a.svelte-11a7qmy:hover{border:solid 2px hsl(var(--theme-text-pri));border-radius:0.25em;color:var(--theme-text-pri);cursor:pointer}a.svelte-11a7qmy:active{border:solid 2px;color:var(--theme-bg-pri-accent)}a.svelte-11a7qmy:focus{border:solid;outline:none}a.svelte-11a7qmy:inner-focus{outline:none}",
+  code: ".active.svelte-1jje6eb{border-bottom:solid 1px var(--color)}a.svelte-1jje6eb,a.svelte-1jje6eb:visited{padding:5px 7px;-webkit-transition:border 0.5s ease, color 0.5s ease;transition:border 0.5s ease, color 0.5s ease;text-decoration:none;font-size:1.2em;font-weight:700;color:var(--color)}a.svelte-1jje6eb:hover{border:solid 2px var(--color);border-radius:0.25em;cursor:pointer}a.svelte-1jje6eb:active{border:solid 2px var(--color)}a.svelte-1jje6eb:focus{border:solid 2px var(--color);outline:none}a.svelte-1jje6eb:inner-focus{outline:none}",
   map: null
 };
 const Link = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -35,13 +35,16 @@ const Link = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$unsubscribe_page = subscribe(page, (value) => $page = value);
   let { ariaLabel = null } = $$props;
   let { url } = $$props;
+  let { color } = $$props;
   if ($$props.ariaLabel === void 0 && $$bindings.ariaLabel && ariaLabel !== void 0)
     $$bindings.ariaLabel(ariaLabel);
   if ($$props.url === void 0 && $$bindings.url && url !== void 0)
     $$bindings.url(url);
+  if ($$props.color === void 0 && $$bindings.color && color !== void 0)
+    $$bindings.color(color);
   $$result.css.add(css);
   $$unsubscribe_page();
-  return `<a${add_attribute("href", url, 0)} class="${["center svelte-11a7qmy", $page.url.pathname === url ? "active" : ""].join(" ").trim()}"${add_attribute("aria-label", !ariaLabel ? void 0 : ariaLabel, 0)}>${slots.default ? slots.default({}) : ``}
+  return `<a${add_attribute("href", url, 0)} style="${"--color: " + escape(color)}" class="${["center svelte-1jje6eb", $page.url.pathname === url ? "active" : ""].join(" ").trim()}"${add_attribute("aria-label", !ariaLabel ? void 0 : ariaLabel, 0)}>${slots.default ? slots.default({}) : ``}
 </a>`;
 });
 var commonjsGlobal = typeof globalThis !== "undefined" ? globalThis : typeof window !== "undefined" ? window : typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : {};
