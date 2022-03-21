@@ -1,0 +1,115 @@
+:root {
+	/*****************************************
+	*
+	*   Orange = youth, creativity, enthusiasm. 37, 92%, 47%
+	*   Green = Harmony, wealth, stability. 119, 89%, 28%
+	*   Brown = Wholesome, warmth, honesty.  37, 90%, 15%
+	*   Blue = Calm, trust, intelligence. 219, 89%, 38%
+	*   Gray = Professionalism, formality, conventionality. 180, 0%, 48%
+	*
+	*******************************************/
+
+	/* Primary Theme */
+	--theme-bg-pri: 180, 50%, 40%;
+	--theme-text-pri: 0, 0%, 100%;
+	--theme-bg-pri-accent: 0, 50%, 35%;
+
+	/* Alt Theme*/
+	--theme-bg-alt: 180, 50%, 30%;
+	--theme-text-alt: 41, 86%, 54%;
+	--theme-bg-alt-accent: 0, 50%, 35%;
+
+	/* Text Themes */
+	--theme-bg-experience: 0, 0%, 38%;
+	--theme-text-experience: 205, 83%, 76%;
+	--theme-text-about: 41, 96%, 54%;
+	--theme-text-contact: 180, 0%, 78%;
+	--theme-text-black: 0, 0%, 0%;
+
+	/* Alert colors */
+	--alert-warn: 60, 94%, 37%;
+	--alert-success: 110, 85%, 25%;
+	--alert-fail: 0, 86%, 51%;
+
+	/* JavaScript variables */
+	--sub-container-diagonal: -7deg;
+	--top-calc: 6%;
+
+	/* Other variables */
+	--main-img: url('/IMG_1521.jpeg');
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	display: border-box;
+	font-family: lato, sans-serif;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.center-column {
+	flex-direction: column;
+}
+
+.text-large {
+	font-size: 3.5em;
+}
+
+.text-normal {
+	font-size: 1.2em;
+}
+
+.text-small {
+	font-size: 1em;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-light {
+	font-weight: lighter;
+}
+
+.shimmer-title {
+	background: left
+		linear-gradient(
+			to right,
+			hsl(var(--text)) 0%,
+			hsl(var(--text)) 50%,
+			hsl(var(--theme-text-pri)) 55%,
+			hsl(var(--theme-text-pri)) 55%,
+			hsl(var(--text)) 60%,
+			hsl(var(--text)) 100%
+		);
+	text-align: center;
+	background-repeat: no-repeat;
+	background-size: 200%;
+	background-clip: text;
+	color: transparent;
+	padding: 20px;
+	animation: shimmer 20s linear infinite alternate;
+}
+
+@keyframes shimmer {
+	0% {
+		background-position-x: left;
+	}
+	80% {
+		background-position-x: right;
+	}
+	100% {
+		background-position-x: left;
+	}
+}
+
+.hidden {
+	display: none;
+}
