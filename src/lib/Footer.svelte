@@ -7,19 +7,19 @@
     <div>
       <p>Find me on:</p>
       <Link url="https://www.linkedin.com/in/nathan-m-444055178/" ariaLabel="Link to Linked In profile for Nathan Meeker.">
-        <img src="/static/linkedin.svg" alt="Linked In icon" />
+        <img src="/linkedin.svg" alt="Linked In icon" />
       </Link>
 
       <Link url="https://github.com/navsubrm" ariaLabel="Link to GitHub profile for Nathan Meeker.">
-        <img src="/static/github.svg" alt="GitHub icon" />
+        <img src="/github.svg" alt="GitHub icon" />
       </Link>
 
       <Link url="https://portfolium.com/NathanMeeker2" ariaLabel="Link to Portfolium profile for Nathan Meeker.">
-        <img src="/static/portfolium.svg" alt="Porfolium site icon." />
+        <img src="/portfolium.svg" alt="Porfolium site icon." />
       </Link>
 
       <Link url="/contact" ariaLabel="Link to my contact page to email me.">
-        <img src="/static/at.svg" alt="At symbol icon" />
+        <img src="/at.svg" alt="At symbol icon" />
       </Link>
     </div>
   </div>
