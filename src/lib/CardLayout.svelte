@@ -55,25 +55,25 @@
 
 <div id="card-container" class="card card-container" style="--bottom: {bottomValue}vh">
   <div class="card-layout about about-btn" bind:this={textAngleAdjust}>
-    <h1 class="card-title">
+    <span class="card-title">
       <a href="#about-me" on:click={() => scrollToItem("about-me")}>About</a>
-    </h1>
+    </span>
   </div>
 
   <div class="card-layout experience experience-btn">
-    <h1 class="card-title">
+    <span class="card-title">
       <a href="#experience" on:click={() => scrollToItem("experience")}>Experience</a>
-    </h1>
+    </span>
   </div>
 
   <div class="card-layout contact contact-btn">
-    <h1 class="card-title">
+    <span class="card-title">
       <a href="#contact" on:click={() => scrollToItem("contact")}>Contact</a>
-    </h1>
+    </span>
   </div>
 
   <div class="card-layout extra extra-btn">
-    <h1 class="card-title" on:click={() => scrollToItem("home")}><a href="#home">Home</a></h1>
+    <span class="card-title" on:click={() => scrollToItem("home")}><a href="#home">Home</a></span>
   </div>
 </div>
 
@@ -105,6 +105,7 @@
     right: 10px;
     text-align: right;
     font-size: 1.7vmax;
+    font-weight: 800;
     text-transform: uppercase;
     width: 100%;
     top: 53%;
@@ -114,6 +115,7 @@
     background-size: 100%;
     background-clip: text;
     color: transparent;
+    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
