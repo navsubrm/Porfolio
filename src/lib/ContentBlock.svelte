@@ -19,7 +19,6 @@
     position: relative;
     background-color: var(--color);
     color: var(--text);
-    padding: 70px 0px;
   }
 
   .content-body {
@@ -27,9 +26,9 @@
     width: 100%;
   }
 
-  @media only screen and (max-width: 900px) {
+  @media only screen and (min-width: 900px) {
     .content-body {
-      padding: 20px 0px;
+      padding: 70px 0px;
     }
   }
 

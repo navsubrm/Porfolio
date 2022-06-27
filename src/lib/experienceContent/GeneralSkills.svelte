@@ -30,9 +30,7 @@
             <li>Incident response</li>
           </ul>
         </ul>
-        <p class="text-normal">
-          I also spent six years as the team lead of a fifty person crisis and emergency management team developing and testing response, recovery, and continuity of operation plans.
-        </p>
+        <p class="text-normal">I also spent six years as the team lead of a fifty person crisis and emergency management team developing and testing response, recovery, and continuity of operation plans.</p>
       </DesignElement1>
     </span>
   </ContentBlock>

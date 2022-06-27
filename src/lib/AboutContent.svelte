@@ -16,10 +16,7 @@
     </div>
     <span slot="content-body">
       <DesignElement1 stripeColor={"hsl(var(--theme-text-about))"}>
-        <p class="text-normal spacing">
-          I am a 24 year Navy veteran with a passion for finding and applying data-driven solutions to improve business outcomes. I have a passion for life-long learning and achieving the best
-          solutions to maximize productivity, quality of work, and quality of life. Together, we can work smart, get it done and be our best in the office and our homes.
-        </p>
+        <p class="text-normal spacing">I am a 24 year Navy veteran with a passion for finding and applying data-driven solutions to improve business outcomes. I have a passion for life-long learning and achieving the best solutions to maximize productivity, quality of work, and quality of life. Together, we can work smart, get it done, and be our best in the office and our homes.</p>
       </DesignElement1>
     </span>
   </ContentBlock>

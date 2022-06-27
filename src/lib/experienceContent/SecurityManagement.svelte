@@ -16,14 +16,8 @@
         <h4 class="text-normal">
           <strong>More than 15 years of Physical and Personnel Security Experience:</strong>
         </h4>
-        <p class="text-normal">
-          I have managed tens of thousands of requests for access to classified materiels and facilities, managed background investigations, oversaw inquires to security violations and incidents,
-          certified secure facilities, and developed security policy.
-        </p>
-        <p class="text-normal">
-          I have managed small and large projects reducing cost, waste, and improving classified materiel management. From producing clean alternative energy by transitioning destruction processes to
-          waste-to-energy conversion facilities to larger facility modificaitons, I am passionate about finding innovative security solutions.
-        </p>
+        <p class="text-normal">I have managed tens of thousands of requests for access to classified materiels and facilities, managed background investigations, oversaw inquires to security violations and incidents, certified secure facilities, and developed security policy.</p>
+        <p class="text-normal">I have managed small and large projects reducing cost, waste, and improving classified materiel management. From producing clean alternative energy by transitioning destruction processes to waste-to-energy conversion facilities to larger facility modificaitons, I am passionate about finding innovative security solutions.</p>
         <p class="text-normal">
           Department of Defense Security Professional Education Development (SPeD) ceritificationed for Security Fundamentals Professional and Physical Security since 2018.
           <a href="https://www.cdse.edu/Certification/About-SPēD-Certification/" title="SPeD about page">Click here for details on the SPeD program.</a>

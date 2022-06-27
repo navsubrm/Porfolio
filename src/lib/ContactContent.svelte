@@ -17,6 +17,7 @@
   let lName: string;
   let email: string;
   let message: string;
+  let width: number;
 
   //Error Elements:
   let emailFormat: HTMLSpanElement;
@@ -97,6 +98,12 @@
   };
 </script>
 
+<svelte:window
+  on:resize={() => {
+    width = window.innerWidth;
+  }}
+/>
+
 <div id={anchor} style="--color-input: {text}">
   <ContentBlock {background} {text}>
     <div slot="content-title" class="center">
@@ -108,53 +115,16 @@
         <div class="center contact">
           <form action="#" id="contact-form" class="form" on:submit={messageSubmit}>
             <label for="first-name">first name: </label>
-            <input
-              id="first-name"
-              type="text"
-              size="50"
-              placeholder="First Name"
-              bind:value={fName}
-              on:focus={(e) => clearInvalidation(e, "First Name")}
-              on:click={(e) => clearInvalidation(e, "First Name")}
-              on:blur={(e) => validateBlankField(e)}
-            />
+            <input id="first-name" type="text" size="50" placeholder="First Name" bind:value={fName} on:focus={(e) => clearInvalidation(e, "First Name")} on:click={(e) => clearInvalidation(e, "First Name")} on:blur={(e) => validateBlankField(e)} />
             <label for="last-name">last name: </label>
-            <input
-              id="last-name"
-              type="text"
-              size="50"
-              placeholder="Last Name"
-              bind:value={lName}
-              on:focus={(e) => clearInvalidation(e, "Last Name")}
-              on:click={(e) => clearInvalidation(e, "Last Name")}
-              on:blur={(e) => validateBlankField(e)}
-            />
+            <input id="last-name" type="text" size="50" placeholder="Last Name" bind:value={lName} on:focus={(e) => clearInvalidation(e, "Last Name")} on:click={(e) => clearInvalidation(e, "Last Name")} on:blur={(e) => validateBlankField(e)} />
             <label for="email"
               >email:
               <span bind:this={emailFormat} class="alert hidden">entry is not a valid email address.</span></label
             >
-            <input
-              id="email"
-              type="text"
-              size="50"
-              placeholder="Email"
-              bind:value={email}
-              on:focus={(e) => clearInvalidation(e, "Email")}
-              on:click={(e) => clearInvalidation(e, "Email")}
-              on:blur={(e) => validateBlankField(e)}
-              on:keyup={() => keyEventValidator(validateEmail)}
-            />
+            <input id="email" type="text" size="50" placeholder="Email" bind:value={email} on:focus={(e) => clearInvalidation(e, "Email")} on:click={(e) => clearInvalidation(e, "Email")} on:blur={(e) => validateBlankField(e)} on:keyup={() => keyEventValidator(validateEmail)} />
             <label for="message">message: </label>
-            <textarea
-              id="message"
-              cols="50"
-              rows="5"
-              placeholder="Enter message here."
-              bind:value={message}
-              on:focus={(e) => clearInvalidation(e, "Enter message here.")}
-              on:click={(e) => clearInvalidation(e, "Enter message here.")}
-              on:blur={(e) => validateBlankField(e)}
-            />
+            <textarea id="message" cols="50" rows="5" placeholder="Enter message here." bind:value={message} on:focus={(e) => clearInvalidation(e, "Enter message here.")} on:click={(e) => clearInvalidation(e, "Enter message here.")} on:blur={(e) => validateBlankField(e)} />
             <span id="message-success" class="alert center hidden" bind:this={messageSuccess}>Thank you for reaching out to me! I will get back to you shortly.</span>
             <span id="message-fail" class="alert center hidden" bind:this={messageFail}>Your message failed to send. Check the information and try again.</span>
             <Button {background} {text} label={"Send Message"} action={messageSubmit} />
@@ -169,7 +139,6 @@
   .contact {
     margin: 0 auto;
     width: 100%;
-    padding: 15px;
     background: hsla(var(--theme-bg-pri), 1);
   }
 
@@ -200,7 +169,6 @@
   textarea,
   input::placeholder,
   textarea::placeholder {
-    font-size: 1.2em;
     color: hsl(var(--theme-text-pri));
   }
 
@@ -297,6 +265,21 @@
     }
     100% {
       opacity: 0;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    .contact {
+      padding: 15px;
+    }
+
+    label,
+    input,
+    textarea,
+    input::placeholder,
+    textarea::placeholder {
+      font-size: 1.2em;
+      color: hsl(var(--theme-text-pri));
     }
   }
 </style>

@@ -62,12 +62,12 @@
   }
   nav {
     position: sticky;
-    top: 58px;
+    top: 50px;
     z-index: 1;
     width: 100%;
     transition: opacity 0.2s linear;
     opacity: 0;
-    background-color: hsla(var(--theme-bg-pri), 1);
+    background-color: hsla(var(--theme-bg-pri), 0.7);
   }
   nav:hover {
     opacity: 1;
@@ -79,6 +79,10 @@
 
   nav ul {
     list-style: none;
+    align-self: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: 100px;
     gap: 25px;
     text-align: center;
     padding: 5px;
@@ -96,6 +100,7 @@
     nav ul {
       gap: 10px;
       font-size: 0.8em;
+      height: 70px;
     }
   }
 </style>

@@ -20,7 +20,7 @@
     rootMargin: "0px",
     threshold: 0.5,
   };
-  //maybe comeback later and see how to directly link the bottom value to the percentage of footer showing.  It was only firing once and not adjusting with scroll after the set point was reached.
+
   const intersectionAction = (entries: any, observer: any) => {
     entries.forEach((entry: any) => {
       if (entry.isIntersecting) {

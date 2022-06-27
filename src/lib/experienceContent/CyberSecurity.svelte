@@ -16,10 +16,7 @@
         <h4 class="text-normal">
           <strong>More than ten years of Cyber Security Experience:</strong>
         </h4>
-        <p class="text-normal">
-          My last ten years have been spent observing emerging threats while developing policies and analytics adopted across the submarine force by which to measure cyber resilience. As an inspector
-          and mentor of shipboard network security teams, I work to evaluate risk and prioritize elements of Navy policy to achieve the most robust network posture possible.
-        </p>
+        <p class="text-normal">My last ten years have been spent observing emerging threats while developing policies and analytics adopted across the submarine force by which to measure cyber resilience. As an inspector and mentor of shipboard network security teams, I work to evaluate risk and prioritize elements of Navy policy to achieve the most robust network posture achievable.</p>
         <ul class="list-pri">
           <li aria-label="COMPTIA Security+ Certificate">COMPTIA Security+ Certified since 2015</li>
         </ul>

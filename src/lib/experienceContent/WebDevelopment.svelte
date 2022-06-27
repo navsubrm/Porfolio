@@ -16,11 +16,7 @@
         <h4 class="text-normal">
           <strong>More than three years of web-development:</strong>
         </h4>
-        <p class="text-normal">
-          I have administered Microsoft SharePoint sites across three organizations. When COVID-19 changed work environments gobally, the US Navy was no exception. At the onset I took a break from my
-          MBA to focus on learning HTML, CSS, JavaScript to quickly develop in-house solutions to telework obstacles. Though dramatically improved from where I started, I am actively seeking a mentor
-          and some team projects with which to engage. If you stumbled across this site and are interested in mentoring or collaborating, contact me.
-        </p>
+        <p class="text-normal">I have administered Microsoft SharePoint sites across three organizations. When COVID-19 changed work environments gobally, the US Navy was no exception. At the onset I took a break from my MBA to focus on learning HTML, CSS, JavaScript to quickly develop in-house solutions to telework obstacles. Though dramatically improved from where I started, I am actively seeking a mentor and some team projects with which to engage. If you stumbled across this site and are interested in mentoring or collaborating, contact me.</p>
         <p class="text-normal">I have experience with the following tools and frameworks among others:</p>
         <div id="logo-block" class="center">
           <img src="/css-3.svg" alt="CSS logo" />
@@ -32,11 +28,9 @@
           <img src="/svelte.svg" alt="Svelte logo" />
         </div>
         <p class="text-normal">
-          I have built apps for tracking personnel security clearance data, organizational onboarding programs, a submarine communications simulator, and trouble ticket management along with smaller
-          personal projects, which I can share from my <a aria-label="Link to navsubrm's git hub profile" href="https://github.com/navsubrm">GitHub</a>
+          I have built apps for tracking personnel security clearance data, organizational onboarding programs, a submarine communications simulator, and trouble ticket management along with smaller personal projects, which I can share from my <a aria-label="Link to navsubrm's git hub profile" href="https://github.com/navsubrm">GitHub</a>
           or
-          <a aria-label="Link to navsubrm's Codepen profile" href="https://codepen.io/navsubrm">Codepen</a> if you are interested. I keep most of my work private due to its purpose, but if you ask and
-          I can verify you, I would be happy to share them.
+          <a aria-label="Link to navsubrm's Codepen profile" href="https://codepen.io/navsubrm">Codepen</a> if you are interested. I keep most of my work private due to its purpose, but if you ask and I can verify you, I would be happy to share them.
         </p>
       </DesignElement1>
     </span>
@@ -71,27 +65,54 @@
   }
 
   #logo-block {
-    padding: 30px;
-    margin: 15px;
-    gap: 65px;
+    gap: 25px;
+    padding: 25px;
   }
+
   #logo-block img {
-    scale: 1.7;
+    height: 80px;
     justify-content: space-evenly;
     align-items: center;
   }
 
   @media only screen and (max-width: 1000px) {
+    #logo-block {
+      gap: 20px;
+      padding: 20px;
+    }
+    #logo-block img {
+      height: 65px;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    #logo-block {
+      gap: 20px;
+      padding: 10px;
+    }
+    #logo-block img {
+      height: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
     h4,
     p {
       width: 90%;
     }
 
     #logo-block {
-      gap: 20px;
+      gap: 10px;
+      padding: 5px;
     }
     #logo-block img {
-      scale: 1;
+      height: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    #logo-block img {
+      height: 30px;
     }
   }
 </style>

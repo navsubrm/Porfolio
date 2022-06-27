@@ -65,7 +65,7 @@
       justify-content: space-evenly;
       flex-wrap: wrap;
       margin: 5px 0px;
-      padding: 10px;
+      padding: 5px;
     }
     #nav-bar {
       flex-direction: column;

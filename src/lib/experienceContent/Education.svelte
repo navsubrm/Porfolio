@@ -16,10 +16,7 @@
         <h4 class="text-normal">
           <strong>Professional Certifications/Education:</strong>
         </h4>
-        <p class="text-normal">
-          I hold civilian and Department of Defense certifications in Cyber, Personnel and Physical Security along with a Bachelor's degree in Business Administration from Excelsior College. I am
-          currently four classes from completing an MBA with an emphasis in Technology/Innovation Management.
-        </p>
+        <p class="text-normal">I hold civilian and Department of Defense certifications in Cyber, Personnel and Physical Security along with a Bachelor's degree in Business Administration from Excelsior College. I am currently four classes from completing an MBA with an emphasis in Technology/Innovation Management.</p>
 
         <ul class="list-pri">
           <li class="text-normal">

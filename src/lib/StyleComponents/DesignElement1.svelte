@@ -38,9 +38,12 @@
     border-bottom: solid 3px var(--color);
   }
 
-  .spacing {
-    margin: 25px;
+  @media only screen and (min-width: 600px) {
+    .spacing {
+      margin: 25px;
+    }
   }
+
   @media only screen and (max-width: 900px) {
     .design-element {
       width: 90%;
