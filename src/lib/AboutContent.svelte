@@ -13,6 +13,9 @@
   <ContentBlock {background} {text}>
     <div slot="content-title" class="center center-column">
       <h2 class="theme-about text-large"><span>About me</span></h2>
+      <div>
+        <img class="profile" src="/profile-pic.png" alt="profile" />
+      </div>
     </div>
     <span slot="content-body">
       <DesignElement1 stripeColor={"hsl(var(--theme-text-about))"}>
@@ -43,5 +46,10 @@
   p {
     line-height: 1.5;
     color: hsl(var(--theme-text-pri));
+  }
+
+  .profile {
+    height: 200px;
+    border-radius: 50%;
   }
 </style>
